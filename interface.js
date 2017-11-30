@@ -3,6 +3,8 @@
  */
 exports.insert = function(db, doc, callback) {
   // TODO: implement
+  var collection = db.collection('movies');
+  collection.insert(doc);
   callback(null);
 };
 
