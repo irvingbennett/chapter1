@@ -2,7 +2,7 @@ var mongodb = require('mongodb');
 var movies = require('./movies');
 var mongoclient = require('./connect');
 
-var client = mongoclient();
+var client = mongoclient(initMovies);
 
 function initMovies(err, db) {
     if (err) {
