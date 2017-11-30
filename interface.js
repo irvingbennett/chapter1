@@ -16,5 +16,7 @@ exports.insert = function(db, doc, callback) {
  */
 exports.byDirector = function(db, director, callback) {
   // TODO: implement
+  var collection = db.collection('movies');
+  collection.find(director);
   callback(null, []);
 };
